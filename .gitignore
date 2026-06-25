@@ -8,6 +8,7 @@ phpstan.neon
 /bootstrap/compiled.php
 /node_modules
 /vendor
+/.gitnexus
 app/database/*.sqlite
 app/storage/meta/services.json
 composer.phar
