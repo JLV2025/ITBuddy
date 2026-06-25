@@ -70,6 +70,20 @@ php artisan serve</code></pre>
 
 <h3>Docker</h3>
 <pre><code>docker compose up -d</code></pre>
+<p>Docker Compose 已内置 MariaDB 11.4 数据库容器，无需额外安装。</p>
+
+<h3>数据库</h3>
+<p>ITBuddy 本身不捆绑数据库引擎。三种方式任选：</p>
+<table>
+  <tr><th>方式</th><th>说明</th><th>推荐场景</th></tr>
+  <tr><td><strong>Docker Compose</strong></td><td>自动启动 MariaDB 容器，零配置</td><td>生产/演示</td></tr>
+  <tr><td><strong>SQLite</strong></td><td>改 <code>.env</code> 中 <code>DB_CONNECTION=sqlite</code>，PHP 内置支持</td><td>开发/测试</td></tr>
+  <tr><td><strong>MySQL / PostgreSQL</strong></td><td>自行安装数据库服务，建库建用户后填入 <code>.env</code></td><td>生产环境</td></tr>
+</table>
+<pre><code># 用 SQLite 最快上手（单文件数据库，无需服务）
+cp .env.example .env
+sed -i 's/DB_CONNECTION=mysql/DB_CONNECTION=sqlite/' .env
+php artisan migrate</code></pre>
 
 <h3>安装</h3>
 <p>系统要求：PHP 8.2+, MySQL/PostgreSQL/SQLite, Node.js</p>
@@ -134,6 +148,20 @@ php artisan serve</code></pre>
 
 <h3>Docker</h3>
 <pre><code>docker compose up -d</code></pre>
+<p>Docker Compose includes a MariaDB 11.4 container — no extra database setup needed.</p>
+
+<h3>Database</h3>
+<p>ITBuddy does not ship with a database engine. Three options:</p>
+<table>
+  <tr><th>Option</th><th>Description</th><th>Best for</th></tr>
+  <tr><td><strong>Docker Compose</strong></td><td>Auto-starts MariaDB container, zero config</td><td>Production/demo</td></tr>
+  <tr><td><strong>SQLite</strong></td><td>Set <code>DB_CONNECTION=sqlite</code> in <code>.env</code>, PHP has built-in support</td><td>Dev/test</td></tr>
+  <tr><td><strong>MySQL / PostgreSQL</strong></td><td>Install database engine, create DB/user, fill in <code>.env</code></td><td>Production</td></tr>
+</table>
+<pre><code># Fastest start with SQLite (single-file database, no service needed)
+cp .env.example .env
+sed -i 's/DB_CONNECTION=mysql/DB_CONNECTION=sqlite/' .env
+php artisan migrate</code></pre>
 
 <h3>Installation</h3>
 <p>Requirements: PHP 8.2+, MySQL/PostgreSQL/SQLite, Node.js</p>
