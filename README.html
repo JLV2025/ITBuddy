@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ITBuddy — IT Asset Management System</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", sans-serif;
+    line-height: 1.7; color: #1a1a1a; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e0e0e0; background: #1a1a1a; }
+    code { background: #333; }
+    pre { background: #2a2a2a; }
+  }
+  h1 { font-size: 2rem; border-bottom: 2px solid #4a90d9; padding-bottom: 0.5rem; }
+  h2 { font-size: 1.4rem; margin-top: 2rem; color: #4a90d9; }
+  h3 { font-size: 1.1rem; }
+  code { background: #f0f0f0; padding: 0.15em 0.4em; border-radius: 4px; font-size: 0.9em; }
+  pre { background: #f8f8f8; padding: 1rem; border-radius: 6px; overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { border: 1px solid #ddd; padding: 0.5rem 0.8rem; text-align: left; }
+  th { background: #f0f0f0; }
+  hr { margin: 2rem 0; border: 0; border-top: 1px solid #ddd; }
+  .divider { border: 0; border-top: 2px solid #4a90d9; margin: 2.5rem 0; }
+  ul { padding-left: 1.5rem; }
+</style>
+</head>
+<body>
+
+<h1>ITBuddy — IT 资产管理系统</h1>
+
+<p>基于 <a href="http://laravel.com">Laravel 12</a> 构建的开源 IT 资产管理系统。</p>
+
+<!-- ═══════════════════ 中文 ═══════════════════ -->
+
+<h2>中文</h2>
+
+<h3>功能</h3>
+<ul>
+  <li>资产全生命周期跟踪与管理</li>
+  <li>软件许可证管理</li>
+  <li>配件及消耗品库存管控</li>
+  <li>资产领用/归还工作流</li>
+  <li>条码及二维码标签打印</li>
+  <li>基于角色的权限控制</li>
+  <li>REST API 集成接口</li>
+</ul>
+
+<h3>技术栈</h3>
+<table>
+  <tr><th>层级</th><th>技术</th></tr>
+  <tr><td>后端</td><td>PHP 8.2+, Laravel 12</td></tr>
+  <tr><td>前端</td><td>AdminLTE 2, Bootstrap 3, Chart.js v2</td></tr>
+  <tr><td>数据库</td><td>MySQL / PostgreSQL / SQLite</td></tr>
+  <tr><td>构建工具</td><td>Laravel Mix (Webpack)</td></tr>
+</table>
+
+<h3>快速开始</h3>
+<pre><code>composer install
+npm install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+npm run dev
+php artisan serve</code></pre>
+
+<h3>Docker</h3>
+<pre><code>docker compose up -d</code></pre>
+
+<h3>安装</h3>
+<p>系统要求：PHP 8.2+, MySQL/PostgreSQL/SQLite, Node.js</p>
+<pre><code>composer install
+cp .env.example .env
+# 编辑 .env 配置数据库连接信息
+php artisan key:generate
+php artisan migrate
+php artisan db:seed
+npm install && npm run dev</code></pre>
+
+<h3>使用</h3>
+<p>通过浏览器访问 <code>http://localhost</code> 并登录系统。详细操作指南请参阅系统内帮助文档。</p>
+
+<h3>API</h3>
+<p>REST API 端点位于 <code>/api/v1/</code>。通过 Laravel Passport (个人访问令牌) 进行身份验证。</p>
+
+<h3>测试</h3>
+<pre><code># 运行全部测试
+php artisan test
+
+# 运行单个测试
+php artisan test --filter testMethodName
+
+# 代码覆盖率报告 (需 Laravel Herd)
+herd coverage</code></pre>
+
+<hr class="divider">
+
+<!-- ═══════════════════ English ═══════════════════ -->
+
+<h2>English</h2>
+
+<h3>Features</h3>
+<ul>
+  <li>Full asset lifecycle tracking and management</li>
+  <li>Software license management</li>
+  <li>Accessory and consumable inventory control</li>
+  <li>Checkout/checkin workflows</li>
+  <li>Barcode and QR code label printing</li>
+  <li>Role-based access control</li>
+  <li>REST API integration</li>
+</ul>
+
+<h3>Tech Stack</h3>
+<table>
+  <tr><th>Layer</th><th>Technology</th></tr>
+  <tr><td>Backend</td><td>PHP 8.2+, Laravel 12</td></tr>
+  <tr><td>Frontend</td><td>AdminLTE 2, Bootstrap 3, Chart.js v2</td></tr>
+  <tr><td>Database</td><td>MySQL / PostgreSQL / SQLite</td></tr>
+  <tr><td>Build</td><td>Laravel Mix (Webpack)</td></tr>
+</table>
+
+<h3>Quick Start</h3>
+<pre><code>composer install
+npm install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+npm run dev
+php artisan serve</code></pre>
+
+<h3>Docker</h3>
+<pre><code>docker compose up -d</code></pre>
+
+<h3>Installation</h3>
+<p>Requirements: PHP 8.2+, MySQL/PostgreSQL/SQLite, Node.js</p>
+<pre><code>composer install
+cp .env.example .env
+# Edit .env with your database credentials
+php artisan key:generate
+php artisan migrate
+php artisan db:seed
+npm install && npm run dev</code></pre>
+
+<h3>Usage</h3>
+<p>Access the web interface at <code>http://localhost</code> and log in. See the in-app help for detailed usage instructions.</p>
+
+<h3>API</h3>
+<p>REST API endpoints at <code>/api/v1/</code>. Authenticate via Laravel Passport (Personal Access Tokens).</p>
+
+<h3>Testing</h3>
+<pre><code># Run all tests
+php artisan test
+
+# Run a single test
+php artisan test --filter testMethodName
+
+# Coverage report (requires Laravel Herd)
+herd coverage</code></pre>
+
+<h3>License</h3>
+<p>Licensed under the AGPL-3.0 license. See <a href="LICENSE">LICENSE</a> for details.</p>
+
+</body>
+</html>
