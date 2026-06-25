@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "bugs": [
+    {
+      "id": "bug-001",
+      "timestamp": "2026-06-25T13:33:47.321Z",
+      "error_message": "Wrong reference: Snipe should be ITBuddy",
+      "file": ".github/copilot-instructions.md",
+      "root_cause": "Used \"Snipe\" instead of \"ITBuddy\"",
+      "fix": "Changed Snipe → ITBuddy",
+      "tags": [
+        "auto-detected",
+        "wrong-reference",
+        "md"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-25T13:33:47.321Z"
+    },
+    {
+      "id": "bug-002",
+      "timestamp": "2026-06-25T13:33:49.552Z",
+      "error_message": "Incorrect value in code",
+      "file": "composer.json",
+      "root_cause": "Had \"grokability/snipe-it\"",
+      "fix": "Changed to \"itbuddy/itbuddy\"",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "json"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-25T13:33:49.552Z"
+    },
+    {
+      "id": "bug-003",
+      "timestamp": "2026-06-25T13:34:19.158Z",
+      "error_message": "Wrong reference: Snipe should be ITBuddy",
+      "file": "README.md",
+      "root_cause": "Used \"Snipe\" instead of \"ITBuddy\"",
+      "fix": "Changed Snipe → ITBuddy",
+      "tags": [
+        "auto-detected",
+        "wrong-reference",
+        "md"
+      ],
+      "related_bugs": [],
+      "occurrences": 4,
+      "last_seen": "2026-06-25T13:34:30.453Z"
+    }
+  ]
+}
