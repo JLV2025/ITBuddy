@@ -1,12 +1,11 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-06-25T13:43:56.683Z
-> Files: 535 tracked | Anatomy hits: 0 | Misses: 0
+> Auto-maintained by OpenWolf. Last scanned: 2026-06-25T13:57:20.092Z
+> Files: 536 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ./
 
 - `_config.yml` (~0 tok)
-- `.all-contributorsrc` (~30720 tok)
 - `.dockerignore` — Docker ignore rules (~42 tok)
 - `.git-blame-ignore-revs` — Pint: Models (~377 tok)
 - `.gitattributes` — Git attributes (~15 tok)
@@ -14,21 +13,15 @@
 - `.htaccess` — Apache configuration (~119 tok)
 - `.nvmrc` (~3 tok)
 - `.pa11yci.json` (~2156 tok)
-- `.upgrade_requirements.json` (~153 tok)
+- `AGENTS.md` — GitNexus agent context (~120 tok)
 - `app.json` (~1532 tok)
 - `artisan` — Laravel CLI entry point (~439 tok)
 - `CLAUDE.md` — OpenWolf, project config, BDD+TDD, copilot ref, dev identity (~1400 tok)
-- `CODE_OF_CONDUCT.md` — Contributor Covenant Code of Conduct (~807 tok)
 - `composer.json` — PHP package manifest (~1154 tok)
-- `CONTRIBUTING.md` — ## Contributing (~80 tok)
-- `CONTRIBUTORS.md` (~25884 tok)
 - `crowdin.yml` — /*.php", (~83 tok)
 - `dev.docker-compose.yml` — Compose file to spin up ITBuddy for development. (~268 tok)
 - `docker-compose.yml` — Docker Compose services (~246 tok)
 - `Dockerfile` — Docker container definition (~1127 tok)
-- `Dockerfile.alpine` (~710 tok)
-- `Dockerfile.fpm-alpine` (~954 tok)
-- `install.sh` — ensure running as root (~108 tok)
 - `LICENSE` — Project license (~9206 tok)
 - `pa11y.js` — Declares pa11y (~170 tok)
 - `package-lock.json` — npm lock file (~107337 tok)
@@ -38,13 +31,12 @@
 - `phpunit.xml` (~337 tok)
 - `Procfile` (~16 tok)
 - `psalm.xml` (~164 tok)
-- `README.md` — Project documentation (~351 tok)
-- `SECURITY.md` — Security Policy (~479 tok)
+- `README.html` — ITBuddy — IT Asset Management System (~1655 tok)
+- `README.md` — Project documentation (~932 tok)
 - `server.php` — Laravel - A PHP Framework For Web Artisans (~152 tok)
 - `snipeit.sh` — / Usage: snipeit.sh [-vh] (~10806 tok)
 - `TESTING.md` — Running the Test Suite (~481 tok)
 - `upgrade.php` — We set this $app_environment here to determine which version of composer to use, --no-dev or with dev dependencies. (~6595 tok)
-- `Vagrantfile` — -*- mode: ruby -*- (~1225 tok)
 - `webpack.mix.js` — Copy, minify and version signature-pad.css (~1386 tok)
 
 ## .claude/
@@ -64,7 +56,7 @@
 
 - `SKILL.md` — Laravel Test Generator for ITBuddy (~466 tok)
 
-## .claude/skills/snipeit-conventions/
+## .claude/skills/itbuddy-conventions/
 
 - `SKILL.md` — ITBuddy Project Conventions (~955 tok)
 
