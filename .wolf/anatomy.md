@@ -1,6 +1,6 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-06-25T13:35:41.117Z
+> Auto-maintained by OpenWolf. Last scanned: 2026-06-25T13:43:56.683Z
 > Files: 535 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ./
@@ -15,7 +15,7 @@
 - `.nvmrc` (~3 tok)
 - `.pa11yci.json` (~2156 tok)
 - `.upgrade_requirements.json` (~153 tok)
-- `app.json` (~1655 tok)
+- `app.json` (~1532 tok)
 - `artisan` — Laravel CLI entry point (~439 tok)
 - `CLAUDE.md` — OpenWolf, project config, BDD+TDD, copilot ref, dev identity (~1400 tok)
 - `CODE_OF_CONDUCT.md` — Contributor Covenant Code of Conduct (~807 tok)
@@ -23,9 +23,9 @@
 - `CONTRIBUTING.md` — ## Contributing (~80 tok)
 - `CONTRIBUTORS.md` (~25884 tok)
 - `crowdin.yml` — /*.php", (~83 tok)
-- `dev.docker-compose.yml` — Compose file to spin up a local Snipe-IT for development. (~272 tok)
+- `dev.docker-compose.yml` — Compose file to spin up ITBuddy for development. (~268 tok)
 - `docker-compose.yml` — Docker Compose services (~246 tok)
-- `Dockerfile` — Docker container definition (~1152 tok)
+- `Dockerfile` — Docker container definition (~1127 tok)
 - `Dockerfile.alpine` (~710 tok)
 - `Dockerfile.fpm-alpine` (~954 tok)
 - `install.sh` — ensure running as root (~108 tok)
@@ -38,7 +38,7 @@
 - `phpunit.xml` (~337 tok)
 - `Procfile` (~16 tok)
 - `psalm.xml` (~164 tok)
-- `README.md` — Project documentation (~2682 tok)
+- `README.md` — Project documentation (~351 tok)
 - `SECURITY.md` — Security Policy (~479 tok)
 - `server.php` — Laravel - A PHP Framework For Web Artisans (~152 tok)
 - `snipeit.sh` — / Usage: snipeit.sh [-vh] (~10806 tok)

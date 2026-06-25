@@ -6,10 +6,10 @@ volumes:
 
 services:
   app:
-    image: snipe/snipe-it:${APP_VERSION:-latest}
+    image: itbuddy/itbuddy:${APP_VERSION:-latest}
     restart: unless-stopped
     volumes:
-      - storage:/var/lib/snipeit
+      - storage:/var/lib/itbuddy
     ports:
       - "${APP_PORT:-8000}:80"
     depends_on:

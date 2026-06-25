@@ -48,6 +48,38 @@
       "related_bugs": [],
       "occurrences": 4,
       "last_seen": "2026-06-25T13:34:30.453Z"
+    },
+    {
+      "id": "bug-004",
+      "timestamp": "2026-06-25T13:41:53.574Z",
+      "error_message": "Incorrect value in code",
+      "file": "app.json",
+      "root_cause": "Had \"Snipe-IT\"",
+      "fix": "Changed to \"ITBuddy\"",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "json"
+      ],
+      "related_bugs": [],
+      "occurrences": 11,
+      "last_seen": "2026-06-25T13:42:20.258Z"
+    },
+    {
+      "id": "bug-005",
+      "timestamp": "2026-06-25T13:43:54.302Z",
+      "error_message": "Significant refactor of ",
+      "file": "Dockerfile",
+      "root_cause": "2 lines replaced/restructured",
+      "fix": "Rewrote 5→4 lines (2 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "unknown"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-25T13:43:54.302Z"
     }
   ]
 }

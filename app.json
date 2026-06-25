@@ -1,12 +1,12 @@
 {
-    "name": "Snipe-IT",
+    "name": "ITBuddy",
     "description": "Open source asset management.",
     "keywords": [
       "asset management",
       "it asset"
     ],
-    "website": "https://snipeitapp.com/",
-    "repository": "https://github.com/grokability/snipe-it",
+    "website": "https://itbuddy.app/",
+    "repository": "https://github.com/itbuddy/itbuddy",
     "logo": "https://pbs.twimg.com/profile_images/976748875733020672/K-HnZCCK_400x400.jpg",
     "success_url": "/setup",
     "env": {
@@ -19,11 +19,11 @@
         "value": "false"
       },
       "APP_KEY": {
-        "description": "A secret key for verifying the integrity of signed cookies. (See either https://snipe-it.readme.io/docs/generate-your-app-key or generate at https://coderstoolbox.online/toolbox/generate-symfony-secret)",
+        "description": "A secret key for verifying the integrity of signed cookies.",
         "value": ""
       },
       "APP_URL": {
-        "description": "URL where your Snipe-IT install will be available at.",
+        "description": "URL where your ITBuddy install will be available at.",
         "value": "https://your-app-name.herokuapp.com"
       },
       "APP_TIMEZONE": {
@@ -31,7 +31,7 @@
         "value": "UTC"
       },
       "APP_LOCALE": {
-        "description": "Which language do you want to use for your install? (https://snipe-it.readme.io/docs/configuration#setting-a-language)",
+        "description": "Which language do you want to use?",
         "value": "en"
       },
       "MAX_RESULTS": {
@@ -39,7 +39,7 @@
         "value": "500"
       },
       "MAIL_MAILER": {
-        "description": "Mail driver - Generally SMTP on Heroku - https://snipe-it.readme.io/docs/configuration#required-outgoing-mail-settings",
+        "description": "Mail driver - Generally SMTP on Heroku.",
         "value": "smtp"
       },
       "MAIL_HOST": {
@@ -68,7 +68,7 @@
       },
       "MAIL_FROM_NAME": {
         "description": "Email from Name",
-        "value": "Snipe-IT"
+        "value": "ITBuddy"
       },
       "MAIL_REPLYTO_ADDR": {
         "description": "Email Reply-To address",
@@ -76,7 +76,7 @@
       },
       "MAIL_REPLYTO_NAME": {
         "description": "Email Reply-To Name",
-        "value": "Snipe-IT"
+        "value": "ITBuddy"
       },
       "MAIL_AUTO_EMBED": {
         "description": "Whether or not to embed images in emails (via CID or base64) versus linking to them.",
@@ -95,12 +95,12 @@
         "value": "false"
       },
       "ENCRYPT": {
-        "description": "Specify whether you wish to use encrypted cookies for your Snipe-IT sessions.",
+        "description": "Specify whether you wish to use encrypted cookies for your sessions.",
         "value": "true"
       },
       "COOKIE_NAME": {
-        "description": "The name of the cookie set by Snipe-IT for session management.",
-        "value": "snipeit_session"
+        "description": "The name of the session cookie.",
+        "value": "itbuddy_session"
       },
       "COOKIE_DOMAIN": {
         "description": "The domain name that the session cookie should be sent for.",
@@ -123,11 +123,11 @@
         "value": "errorlog"
       },
       "ALLOW_IFRAMING": {
-        "description": "Allow Snipe-IT to be loaded using an iFrame?",
+        "description": "Allow the app to be loaded using an iFrame?",
         "value": "false"
       },
       "GOOGLE_MAPS_API": {
-        "description": "Include your Google Maps API key here if you'd like Snipe-IT to load maps from Google on your locations and suppliers pages.",
+        "description": "Include your Google Maps API key for location maps.",
         "required": false
       },
       "BACKUP_ENV": {
