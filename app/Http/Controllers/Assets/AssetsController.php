@@ -36,7 +36,7 @@ use TypeError;
 
 /**
  * This class controls all actions related to assets for
- * the Snipe-IT Asset Management application.
+ * the ITBuddy Asset Management application.
  *
  * @version    v1.0
  *

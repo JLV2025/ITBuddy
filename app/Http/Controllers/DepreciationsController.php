@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 
 /**
  * This controller handles all actions related to Depreciations for
- * the Snipe-IT Asset Management application.
+ * the ITBuddy Asset Management application.
  *
  * @version    v1.0
  */

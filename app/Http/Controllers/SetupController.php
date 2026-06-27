@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\URL;
 
 /**
  * This controller handles all actions related to Settings for
- * the Snipe-IT Asset Management application.
+ * the ITBuddy Asset Management application.
  *
  * @version    v1.0
  */

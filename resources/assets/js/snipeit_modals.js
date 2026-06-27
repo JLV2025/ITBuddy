@@ -1,8 +1,8 @@
 /* 
  * 
- * Snipe-IT Universal Modal support
- * 
- * Enables modal dialogs to create sub-resources throughout Snipe-IT
+ * ITBuddy Universal Modal support
+ *
+ * Enables modal dialogs to create sub-resources throughout ITBuddy
  * 
  */
 

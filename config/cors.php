@@ -7,7 +7,7 @@
  * ---------------------------------------------------------------------
  *
  * Since we don't really want people editing config files (lest they get
- * overwritten later), this enables the person managing the Snipe-IT
+ * overwritten later), this enables the person managing the ITBuddy
  * installation to modify these values without modifying the code.
  *
  * If APP_CORS_ALLOWED_ORIGINS is not set in the .env (for example if no one added it

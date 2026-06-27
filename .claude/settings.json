@@ -54,16 +54,6 @@
             "timeout": 10
           }
         ]
-      },
-      {
-        "matcher": "\\.php$",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "cd \"$CLAUDE_PROJECT_DIR\" && ./vendor/bin/pint \"$CLAUDE_FILE_PATH\" --quiet 2>/dev/null || true",
-            "timeout": 15
-          }
-        ]
       }
     ],
     "Stop": [

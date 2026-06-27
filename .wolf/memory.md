@@ -63,3 +63,62 @@
 | 21:57 | Edited README.html | expanded (+14 lines) | ~195 |
 | 21:57 | Edited README.html | expanded (+14 lines) | ~258 |
 | 21:57 | Session end: 41 writes across 13 files (CLAUDE.md, SKILL.md, copilot-instructions.md, composer.json, README.md) | 18 reads | ~19486 tok |
+| 22:02 | Session end: 41 writes across 13 files (CLAUDE.md, SKILL.md, copilot-instructions.md, composer.json, README.md) | 18 reads | ~19486 tok |
+| 22:05 | Edited .gitignore | 2→3 lines | ~9 |
+| 22:06 | Session end: 42 writes across 14 files (CLAUDE.md, SKILL.md, copilot-instructions.md, composer.json, README.md) | 19 reads | ~19857 tok |
+| 22:07 | Session end: 42 writes across 14 files (CLAUDE.md, SKILL.md, copilot-instructions.md, composer.json, README.md) | 19 reads | ~19857 tok |
+| 22:07 | Session end: 42 writes across 14 files (CLAUDE.md, SKILL.md, copilot-instructions.md, composer.json, README.md) | 19 reads | ~19857 tok |
+| 22:08 | Session end: 42 writes across 14 files (CLAUDE.md, SKILL.md, copilot-instructions.md, composer.json, README.md) | 19 reads | ~19857 tok |
+
+## Session: 2026-06-27 09:31
+
+| Time | Action | File(s) | Outcome | ~Tokens |
+|------|--------|---------|---------|--------|
+| 09:47 | Fixed Pint hook matcher — `\.php$`→merged into `Write|Edit|MultiEdit` | .claude/settings.json | Pint now fires on PHP writes only | ~1200 |
+| 09:47 | Session end: 1 writes across 1 files (settings.json) | 14 reads | ~6685 tok |
+
+## Session: 2026-06-27 09:48
+
+| Time | Action | File(s) | Outcome | ~Tokens |
+|------|--------|---------|---------|--------|
+
+## Session: 2026-06-27 12:53
+
+| Time | Action | File(s) | Outcome | ~Tokens |
+|------|--------|---------|---------|--------|
+| 12:56 | Created docker-compose.yml | — | ~312 |
+| 12:57 | Created DEPLOY_DOCKER.md | — | ~763 |
+| 12:58 | Docker 部署：创建 .env + 更新 docker-compose.yml + 写 DEPLOY_DOCKER.md | .env, docker-compose.yml, DEPLOY_DOCKER.md | ready | ~5k |
+| 12:57 | Session end: 2 writes across 2 files (docker-compose.yml, DEPLOY_DOCKER.md) | 10 reads | ~4609 tok |
+| 13:07 | Session end: 2 writes across 2 files (docker-compose.yml, DEPLOY_DOCKER.md) | 10 reads | ~4609 tok |
+
+## Session: 2026-06-27 13:34
+
+| Time | Action | File(s) | Outcome | ~Tokens |
+|------|--------|---------|---------|--------|
+
+## Session: 2026-06-27 13:34
+
+| Time | Action | File(s) | Outcome | ~Tokens |
+|------|--------|---------|---------|--------|
+| 13:36 | Edited docker-compose.yml add .env mount | docker-compose.yml | done |
+| 13:38 | Edited ../../../../.docker/daemon.json | 9→14 lines | ~72 |
+| 13:38 | Session end: 2 writes across 2 files (docker-compose.yml, daemon.json) | 2 reads | ~407 tok |
+| 13:44 | Session end: 2 writes across 2 files (docker-compose.yml, daemon.json) | 2 reads | ~407 tok |
+| 13:48 | Edited docker/startup.sh | inline fix | ~5 |
+| 13:51 | Session end: 3 writes across 3 files (docker-compose.yml, daemon.json, startup.sh) | 3 reads | ~412 tok |
+| 14:24 | Edited CLAUDE.md | inline fix | ~52 |
+| 14:24 | Edited resources/assets/js/snipeit_modals.js | 3→3 lines | ~30 |
+| 14:25 | Edited resources/assets/js/snipeit.js | inline fix | ~22 |
+| 14:25 | Edited database/migrations/2013_11_22_213400_edits_to_settings_table.php | inline fix | ~20 |
+| 14:25 | 批量替换 Snipe-IT→ITBuddy：250+文件→9文件残余 | lang/, views/, app/, config/, tests/, .env*, docker/, routes/, database/, js/ | 200 OK | ~15k |
+| 14:26 | Session end: 7 writes across 7 files (docker-compose.yml, daemon.json, startup.sh, CLAUDE.md, snipeit_modals.js) | 7 reads | ~1941 tok |
+| 14:31 | Edited resources/views/layouts/default.blade.php | expanded (+6 lines) | ~187 |
+| 14:32 | Edited resources/views/layouts/default.blade.php | 6→6 lines | ~124 |
+| 14:33 | Session end: 9 writes across 8 files (docker-compose.yml, daemon.json, startup.sh, CLAUDE.md, snipeit_modals.js) | 9 reads | ~34405 tok |
+| 14:35 | Edited resources/views/layouts/default.blade.php | 5→5 lines | ~99 |
+| 14:35 | Edited resources/views/layouts/default.blade.php | inline fix | ~27 |
+| 14:36 | Edited resources/views/layouts/default.blade.php | inline fix | ~36 |
+| 14:36 | Edited resources/views/layouts/default.blade.php | "sidebar-mini{{ (session(" → "sidebar-mini" | ~9 |
+| 14:36 | Session end: 13 writes across 8 files (docker-compose.yml, daemon.json, startup.sh, CLAUDE.md, snipeit_modals.js) | 9 reads | ~34601 tok |
+| 14:45 | 收工：清理+anatomy+cerebrum+memory+提交推送 | .wolf/, .env, docker/, resources/views/, public/img/ | 生产环境运行中 | ~30k |

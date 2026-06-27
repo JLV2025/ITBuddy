@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Session;
 
 /**
  * This controller handles all actions related to the Admin Dashboard
- * for the Snipe-IT Asset Management application.
+ * for the ITBuddy Asset Management application.
  *
  * @author A. Gianotto <snipe@snipe.net>
  *

@@ -34,7 +34,7 @@ use Symfony\Component\HttpFoundation\StreamedResponse;
 
 /**
  * This controller handles all actions related to Users for
- * the Snipe-IT Asset Management application.
+ * the ITBuddy Asset Management application.
  *
  * @version    v1.0
  */

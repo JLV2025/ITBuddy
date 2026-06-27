@@ -1,4 +1,10 @@
 # Compose file for production.
+#
+# Usage:
+#   docker compose up -d
+#
+# This builds the app image locally from the Dockerfile.
+# After first run, visit http://localhost:8000/setup to complete installation.
 
 volumes:
   db_data:
@@ -6,10 +12,14 @@ volumes:
 
 services:
   app:
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: itbuddy/itbuddy:${APP_VERSION:-latest}
     restart: unless-stopped
     volumes:
       - storage:/var/lib/itbuddy
+      - ./.env:/var/www/html/.env
     ports:
       - "${APP_PORT:-8000}:80"
     depends_on:

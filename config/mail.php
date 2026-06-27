@@ -39,7 +39,7 @@ return [
     | messages sent by your application. Alternative mailers may be setup
     | and used as needed; however, this mailer will be used by default.
     |
-    | Previous versions of Snipe-IT and Laravel used SwiftMailer, which used
+    | Previous versions of ITBuddy and Laravel used SwiftMailer, which used
     | MAIL_DRIVER instead of MAIL_MAILER. In order to not break existing
     | installations, we'll accept both
     |

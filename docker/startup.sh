@@ -50,7 +50,7 @@ then
   exit
 fi
 
-if [ -f /var/lib/snipeit/ssl/snipeit-ssl.crt -a -f /var/lib/snipeit/ssl/snipeit-ssl.key ]
+if [ -f /var/lib/itbuddy/ssl/snipeit-ssl.crt -a -f /var/lib/itbuddy/ssl/snipeit-ssl.key ]
 then
   a2enmod ssl
 else
@@ -90,12 +90,12 @@ for dir in \
   'dumps' \
   'keys'
 do
-  [ ! -d "/var/lib/snipeit/$dir" ] && mkdir -p "/var/lib/snipeit/$dir"
+  [ ! -d "/var/lib/itbuddy/$dir" ] && mkdir -p "/var/lib/itbuddy/$dir"
 done
 
-chown -R docker:root /var/lib/snipeit/data/*
-chown -R docker:root /var/lib/snipeit/dumps
-chown -R docker:root /var/lib/snipeit/keys
+chown -R docker:root /var/lib/itbuddy/data/*
+chown -R docker:root /var/lib/itbuddy/dumps
+chown -R docker:root /var/lib/itbuddy/keys
 chown -R docker:root /var/www/html/storage/framework/cache
 
 # Fix php settings

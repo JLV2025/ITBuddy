@@ -544,7 +544,7 @@ class Helper
          *
          * WARNING: This does conversions based on *locale* - a Unix-ey-like thing.
          *
-         * Everything else in the system tends to convert based on the Snipe-IT settings
+         * Everything else in the system tends to convert based on the ITBuddy settings
          *
          * So it's very likely this is *not* what you want - instead look for the new
          *

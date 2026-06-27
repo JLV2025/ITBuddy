@@ -3,83 +3,85 @@
   "bugs": [
     {
       "id": "bug-001",
-      "timestamp": "2026-06-25T13:33:47.321Z",
-      "error_message": "Wrong reference: Snipe should be ITBuddy",
-      "file": ".github/copilot-instructions.md",
-      "root_cause": "Used \"Snipe\" instead of \"ITBuddy\"",
-      "fix": "Changed Snipe → ITBuddy",
+      "timestamp": "2026-06-27T05:48:04.396Z",
+      "error_message": "Wrong reference: snipeit should be itbuddy",
+      "file": "docker/startup.sh",
+      "root_cause": "Used \"snipeit\" instead of \"itbuddy\"",
+      "fix": "Changed snipeit → itbuddy",
       "tags": [
         "auto-detected",
         "wrong-reference",
-        "md"
+        "sh"
       ],
       "related_bugs": [],
       "occurrences": 1,
-      "last_seen": "2026-06-25T13:33:47.321Z"
+      "last_seen": "2026-06-27T05:48:04.396Z"
     },
     {
       "id": "bug-002",
-      "timestamp": "2026-06-25T13:33:49.552Z",
-      "error_message": "Incorrect value in code",
-      "file": "composer.json",
-      "root_cause": "Had \"grokability/snipe-it\"",
-      "fix": "Changed to \"itbuddy/itbuddy\"",
+      "timestamp": "2026-06-27T05:51:34.808Z",
+      "error_message": "LeagueFlysystemUnableToCreateDirectory: Unable to create a directory at /var/www/html/public/uploads",
+      "file": "docker/startup.sh",
+      "root_cause": "startup.sh used old path /var/lib/snipeit/ instead of /var/lib/itbuddy/. Symlinks in Dockerfile pointed to /var/lib/itbuddy/ but data dirs were created at /var/lib/snipeit/. Volume mount mismatch.",
+      "fix": "1) Replaced all /var/lib/snipeit/ with /var/lib/itbuddy/ in startup.sh. 2) Manually created missing data dirs at /var/lib/itbuddy/ in running container.",
       "tags": [
-        "auto-detected",
-        "wrong-value",
-        "json"
+        "docker",
+        "path-mismatch",
+        "500-error",
+        "uploads",
+        "startup"
       ],
       "related_bugs": [],
       "occurrences": 1,
-      "last_seen": "2026-06-25T13:33:49.552Z"
+      "last_seen": "2026-06-27T05:51:34.809Z"
     },
     {
       "id": "bug-003",
-      "timestamp": "2026-06-25T13:34:19.158Z",
-      "error_message": "Wrong reference: Snipe should be ITBuddy",
-      "file": "README.md",
-      "root_cause": "Used \"Snipe\" instead of \"ITBuddy\"",
-      "fix": "Changed Snipe → ITBuddy",
-      "tags": [
-        "auto-detected",
-        "wrong-reference",
-        "md"
-      ],
-      "related_bugs": [],
-      "occurrences": 4,
-      "last_seen": "2026-06-25T13:34:30.453Z"
-    },
-    {
-      "id": "bug-004",
-      "timestamp": "2026-06-25T13:41:53.574Z",
+      "timestamp": "2026-06-27T06:24:10.653Z",
       "error_message": "Incorrect value in code",
-      "file": "app.json",
-      "root_cause": "Had \"Snipe-IT\"",
-      "fix": "Changed to \"ITBuddy\"",
+      "file": "CLAUDE.md",
+      "root_cause": "Had `. `",
+      "fix": "Changed to `. JS 初始化由 `",
       "tags": [
         "auto-detected",
         "wrong-value",
-        "json"
-      ],
-      "related_bugs": [],
-      "occurrences": 11,
-      "last_seen": "2026-06-25T13:42:20.258Z"
-    },
-    {
-      "id": "bug-005",
-      "timestamp": "2026-06-25T13:43:54.302Z",
-      "error_message": "Significant refactor of ",
-      "file": "Dockerfile",
-      "root_cause": "2 lines replaced/restructured",
-      "fix": "Rewrote 5→4 lines (2 removed)",
-      "tags": [
-        "auto-detected",
-        "refactor",
-        "unknown"
+        "md"
       ],
       "related_bugs": [],
       "occurrences": 1,
-      "last_seen": "2026-06-25T13:43:54.302Z"
+      "last_seen": "2026-06-27T06:24:10.653Z"
+    },
+    {
+      "id": "bug-004",
+      "timestamp": "2026-06-27T06:25:22.505Z",
+      "error_message": "Incorrect value in code",
+      "file": "database/migrations/2013_11_22_213400_edits_to_settings_table.php",
+      "root_cause": "Had 'Snipe IT Asset Management'",
+      "fix": "Changed to 'ITBuddy Asset Management'",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "php"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-27T06:25:22.505Z"
+    },
+    {
+      "id": "bug-005",
+      "timestamp": "2026-06-27T06:36:18.861Z",
+      "error_message": "Incorrect value in code",
+      "file": "resources/views/layouts/default.blade.php",
+      "root_cause": "Had \"sidebar-mini{{ (session('",
+      "fix": "Changed to \"sidebar-mini\"",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "php"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-27T06:36:18.861Z"
     }
   ]
 }

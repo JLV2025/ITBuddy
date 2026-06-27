@@ -1,15 +1,17 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-06-25T13:57:20.092Z
+> Auto-maintained by OpenWolf. Last scanned: 2026-06-27T07:00:00.000Z
 > Files: 536 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ./
 
 - `_config.yml` (~0 tok)
 - `.dockerignore` — Docker ignore rules (~42 tok)
+- `.env` — Production Docker env (~1550 tok)
+- `.env.example` — Env template (~1532 tok)
 - `.git-blame-ignore-revs` — Pint: Models (~377 tok)
 - `.gitattributes` — Git attributes (~15 tok)
-- `.gitignore` — Git ignore rules (~361 tok)
+- `.gitignore` — Git ignore rules (~364 tok)
 - `.htaccess` — Apache configuration (~119 tok)
 - `.nvmrc` (~3 tok)
 - `.pa11yci.json` (~2156 tok)
@@ -19,8 +21,32 @@
 - `CLAUDE.md` — OpenWolf, project config, BDD+TDD, copilot ref, dev identity (~1400 tok)
 - `composer.json` — PHP package manifest (~1154 tok)
 - `crowdin.yml` — /*.php", (~83 tok)
+- `DEPLOY_DOCKER.md` — Docker 部署指南 (~715 tok)
+- `dev.docker-compose.yml` — Compose file for development. (~268 tok)
+- `docker-compose.yml` — Docker Compose production with local build (~350 tok)
+- `Dockerfile` — Docker container definition (~1127 tok)
+- `LICENSE` — Project license (~9206 tok)
+- `logo.jpg` — 项目 Logo 源文件（待使用）
+
+## ./
+
+- `_config.yml` (~0 tok)
+- `.dockerignore` — Docker ignore rules (~42 tok)
+- `.git-blame-ignore-revs` — Pint: Models (~377 tok)
+- `.gitattributes` — Git attributes (~15 tok)
+- `.gitignore` — Git ignore rules (~364 tok)
+- `.htaccess` — Apache configuration (~119 tok)
+- `.nvmrc` (~3 tok)
+- `.pa11yci.json` (~2156 tok)
+- `AGENTS.md` — GitNexus agent context (~120 tok)
+- `app.json` (~1532 tok)
+- `artisan` — Laravel CLI entry point (~439 tok)
+- `CLAUDE.md` — OpenWolf (~1933 tok)
+- `composer.json` — PHP package manifest (~1154 tok)
+- `crowdin.yml` — /*.php", (~83 tok)
+- `DEPLOY_DOCKER.md` — ITBuddy Docker 部署指南 (~715 tok)
 - `dev.docker-compose.yml` — Compose file to spin up ITBuddy for development. (~268 tok)
-- `docker-compose.yml` — Docker Compose services (~246 tok)
+- `docker-compose.yml` — Docker Compose services (~322 tok)
 - `Dockerfile` — Docker container definition (~1127 tok)
 - `LICENSE` — Project license (~9206 tok)
 - `pa11y.js` — Declares pa11y (~170 tok)
@@ -41,7 +67,7 @@
 
 ## .claude/
 
-- `settings.json` (~522 tok)
+- `settings.json` (~500 tok)
 
 ## .claude/agents/
 
@@ -700,3 +726,20 @@
 - `StatuslabelPolicy.php` — Authorization policy: StatuslabelPolicy (~46 tok)
 - `SupplierPolicy.php` — Authorization policy: SupplierPolicy (~84 tok)
 - `UserPolicy.php` — Authorization policy: UserPolicy (~82 tok)
+
+## database/migrations/
+
+- `2013_11_22_213400_edits_to_settings_table.php` — Run the migrations. (~185 tok)
+
+## docker/
+
+- `startup.sh` — Cribbed from nextcloud docker official repo (~1150 tok)
+
+## resources/assets/js/
+
+- `snipeit_modals.js` — *************************************************************** (~2654 tok)
+- `snipeit.js` — ************************************* (~8732 tok)
+
+## resources/views/layouts/
+
+- `default.blade.php` — Safari ignores option[selected] styling on plain <select multiple> until (~32125 tok)

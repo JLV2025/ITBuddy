@@ -83,7 +83,7 @@ Pass `data-company-id="{{ $user->company_id }}"` in Blade to wire it to select2.
 
 ### Select2 AJAX Dropdowns
 
-Use `class="js-data-ajax"` with `data-endpoint="hardware|licenses|consumables|..."`. `snipeit.js` auto-initializes these, forwarding `data-company-id` as `companyId` and `data-asset-status-type` as `statusType` to the API.
+Use `class="js-data-ajax"` with `data-endpoint="hardware|licenses|consumables|..."`. JS 初始化由 `snipeit.js` 自动处理，将 `data-company-id` 作为 `companyId`、`data-asset-status-type` 作为 `statusType` 转发到 API。
 
 ### Routes
 
@@ -138,7 +138,7 @@ herd coverage
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **ITBuddy** (23124 symbols, 52682 relationships, 300 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
+This project is indexed by GitNexus as **ITBuddy** (23121 symbols, 52712 relationships, 300 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
 
 > If any GitNexus tool warns the index is stale, run `npx gitnexus analyze` in terminal first.
 

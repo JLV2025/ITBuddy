@@ -1,7 +1,7 @@
 #!/bin/bash
 #/ Usage: snipeit.sh [-vh]
 #/
-#/ Install Snipe-IT open source asset management.
+#/ Install ITBuddy open source asset management.
 #/
 #/ OPTIONS:
 #/   -v | --verbose    Enable verbose output.
@@ -15,7 +15,7 @@
 # Feel free to modify, but please give               #
 # credit where it's due. Thanks!                     #
 #                                                    #
-#         Updated Snipe-IT Install Script            #
+#         Updated ITBuddy Install Script            #
 #          Update created by Aaron Myers             #
 # Change log                                         #
 # * verify support for Ubuntu 24.04 -> 25.04         #
@@ -176,12 +176,12 @@ create_virtualhost () {
 }
 
 create_user () {
-  echo "* Creating Snipe-IT user."
+  echo "* Creating ITBuddy user."
 
   if [[ "$distro" == "Ubuntu" ]] || [[ "$distro" == "Debian" ]] || [[ "$distro" == "Raspbian" ]] ; then
-    /usr/sbin/adduser --quiet --disabled-password --gecos 'Snipe-IT User' "$APP_USER"
+    /usr/sbin/adduser --quiet --disabled-password --gecos 'ITBuddy User' "$APP_USER"
   else
-    adduser -c "Snipe-IT User" "$APP_USER"
+    adduser -c "ITBuddy User" "$APP_USER"
   fi
 
   # Add the user to the apache group so the app can write to any files apache
@@ -239,7 +239,7 @@ install_snipeit () {
   echo "* Creating MariaDB Database/User."
   mysql -u root --execute="CREATE DATABASE snipeit;CREATE USER snipeit_dbuser@localhost IDENTIFIED BY '$mysqluserpw'; GRANT ALL PRIVILEGES ON snipeit.* TO snipeit_dbuser@localhost;"
 
-  echo -e "\n\n* Cloning Snipe-IT from github to the web directory."
+  echo -e "\n\n* Cloning ITBuddy from github to the web directory."
   log "git clone https://github.com/grokability/snipe-it $APP_PATH" & pid=$!
   progress
   pushd $APP_PATH
@@ -351,7 +351,7 @@ echo '
 '
 
 echo ""
-echo "  Welcome to Snipe-IT Inventory Installer for CentOS, Rocky, Debian, and Ubuntu!"
+echo "  Welcome to ITBuddy Inventory Installer for CentOS, Rocky, Debian, and Ubuntu!"
 echo ""
 echo "  Installation log located: $APP_LOG"
 echo ""
@@ -412,7 +412,7 @@ set_fqdn () {
 set_dbpass () {
    ans=default
    until [[ $ans == "yes" ]] || [[ $ans == "no" ]]; do
-      echo -n "  Q. Do you want to automatically create the SnipeIT database user password? (y/n) "
+      echo -n "  Q. Do you want to automatically create the ITBuddy database user password? (y/n) "
       read -r setpw
 
       case $setpw in
@@ -1109,7 +1109,7 @@ esac
 done
 
 echo ""
-echo "  ***Open http://$fqdn to login to Snipe-IT.***"
+echo "  ***Open http://$fqdn to login to ITBuddy.***"
 echo ""
 echo ""
 echo "* Installation log located in $APP_LOG."

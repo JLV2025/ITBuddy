@@ -581,10 +581,10 @@ class SnipeSCIMConfig
                                     $manager_id = substr($url, strlen($users_prefix));
                                 }
                             } elseif (array_key_exists('value', $value)) {
-                                // this is _Snipe-IT_'s ID being passed as 'value' I believe?
+                                // this is _ITBuddy_'s ID being passed as 'value' I believe?
                                 // if you use the 'managerId' field in Okta, you get:
                                 //     [value] => 9999999
-                                // that, at least, is the spec - but *what* ID is that?! It's supposed to be a Snipe-IT one!
+                                // that, at least, is the spec - but *what* ID is that?! It's supposed to be a ITBuddy one!
                                 $manager_id = $value['value'];
                             }
                             \Log::debug("Non-Microsoft - Trying to '$operation' for manager with value: ".print_r($value, true));

@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Validator;
 
 /**
  * This controller handles all actions related to Asset Maintenance for
- * the Snipe-IT Asset Management application.
+ * the ITBuddy Asset Management application.
  *
  * @version    v2.0
  */

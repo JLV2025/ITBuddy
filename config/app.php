@@ -95,7 +95,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => env('SITE_NAME', 'Snipe-IT'),
+    'name' => env('SITE_NAME', 'ITBuddy'),
 
     /*
     |--------------------------------------------------------------------------
@@ -225,7 +225,7 @@ return [
    |--------------------------------------------------------------------------
    |
    | Normal users will never need to edit this. This option lets you run
-   | Snipe-IT within an I-Frame, which is normally disabled by default for
+   | ITBuddy within an I-Frame, which is normally disabled by default for
    | security reasons, to prevent clickjacking. It should normally be set to false.
    |
    */
@@ -331,7 +331,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | Normal users will never need to edit this. This option lets you run a
-    | version of Snipe-IT with limited functionality to prevent demo abuse.
+    | version of ITBuddy with limited functionality to prevent demo abuse.
     |
     */
 

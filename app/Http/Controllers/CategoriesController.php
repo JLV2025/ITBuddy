@@ -12,7 +12,7 @@ use Illuminate\Http\RedirectResponse;
 
 /**
  * This class controls all actions related to Categories for
- * the Snipe-IT Asset Management application.
+ * the ITBuddy Asset Management application.
  *
  * @version    v1.0
  *

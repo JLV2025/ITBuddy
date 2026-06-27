@@ -1188,7 +1188,7 @@
 
 </head>
 
-    <body class="sidebar-mini{{ (session('menu_state')!='open') ? ' sidebar-mini sidebar-collapse' : ''  }}">
+    <body class="sidebar-mini">
 
         <a class="skip-main" href="#main">{{ trans('general.skip_to_main_content') }}</a>
         <div class="wrapper">
@@ -1199,8 +1199,14 @@
 
                 <!-- Header Navbar: style can be found in header.less -->
                 <nav class="navbar navbar-static-top" role="navigation">
-                    <!-- Sidebar toggle button above the compact sidenav -->
-                    <a href="#" style="color: white" class="sidebar-toggle btn btn-white" data-toggle="push-menu"
+                    <!-- 項目 Logo -->
+                    <a href="{{ config('app.url') }}" style="float: left; padding: 3px 10px; line-height: 0; background: transparent;">
+                        <img src="{{ config('app.url') }}/img/logo.jpg"
+                             style="height: 44px; display: inline-block; background: transparent; mix-blend-mode: multiply;"
+                             alt="{{ $snipeSettings->site_name }}">
+                    </a>
+                    <!-- Sidebar toggle — hidden, use sidebar-collapse + mobile toggle instead -->
+                    <a href="#" style="display: none;" class="sidebar-toggle btn btn-white" data-toggle="push-menu"
                        role="button">
                         <span class="sr-only">{{ trans('general.toggle_navigation') }}</span>
                     </a>

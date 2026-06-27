@@ -190,7 +190,7 @@ class RestoreFromBackup extends Command
      *
      * @var string
      */
-    protected $description = 'Restore from a previously created Snipe-IT backup file';
+    protected $description = 'Restore from a previously created ITBuddy backup file';
 
     /**
      * Create a new command instance.
@@ -420,7 +420,7 @@ class RestoreFromBackup extends Command
 
         if (strpos($sqlfiles[0], 'db-dumps') === false) {
             // return $this->error("SQL backup file is missing 'db-dumps' component of full pathname: ".$sqlfiles[0]);
-            // older Snipe-IT installs don't have the db-dumps subdirectory component
+            // older ITBuddy installs don't have the db-dumps subdirectory component
         }
 
         $sql_stat = $za->statIndex($sqlfile_indices[0]);

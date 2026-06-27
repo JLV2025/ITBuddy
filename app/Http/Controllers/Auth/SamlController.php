@@ -35,7 +35,7 @@ class SamlController extends Controller
     }
 
     /**
-     * Return SAML SP metadata for Snipe-IT
+     * Return SAML SP metadata for ITBuddy
      *
      * /saml/metadata
      *

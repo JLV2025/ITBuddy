@@ -30,7 +30,7 @@ Route::group(['prefix' => 'v1', 'middleware' => ['api', 'api-throttle:api']], fu
         $client = Client::firstOrCreate(
             ['redirect' => 'com.grokability.snipeitmobile://home'],
             [
-                'name' => 'Snipe-IT Mobile App',
+                'name' => 'ITBuddy Mobile App',
                 'user_id' => null,
                 'secret' => '',
                 'personal_access_client' => false,

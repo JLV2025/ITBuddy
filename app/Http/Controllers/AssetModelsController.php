@@ -20,7 +20,7 @@ use Illuminate\Support\MessageBag;
 
 /**
  * This class controls all actions related to asset models for
- * the Snipe-IT Asset Management application.
+ * the ITBuddy Asset Management application.
  *
  * @version    v1.0
  *
